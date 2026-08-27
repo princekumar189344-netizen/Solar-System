@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Interactive Solar System Animation</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- Stars -->
+    <div class="stars"></div>
+
+    <h1>Interactive Solar System Animation</h1>
+
+    <div class="controls">
+        <button id="toggleBtn">Pause Animation</button>
+
+        <label for="speedSlider">Orbit Speed:</label>
+        <input type="range" id="speedSlider" min="1" max="10" value="5">
+    </div>
+
+    <div class="solar-system">
+
+        <div class="sun"></div>
+
+
+        <!-- Mercury -->
+        <div class="orbit mercury-orbit">
+            <div class="planet mercury"
+                data-name="☀️ Mercury"
+                data-info="Mercury is the first and smallest planet in our Solar System. It is the closest planet to the Sun and has a rocky surface. Mercury moves around the Sun very quickly, completing one orbit in about 88 Earth days. It has no moons and has a very thin atmosphere..">
+            </div>
+        </div>
+
+
+        <!-- Venus -->
+        <div class="orbit venus-orbit">
+            <div class="planet venus"
+                data-name="🟠 Venus"
+                data-info="Venus is the second planet from the Sun and is similar in size to Earth. It is a rocky planet covered by a thick atmosphere. Venus is the hottest planet in the Solar System because its thick atmosphere traps heat. A day on Venus is longer than its year.">
+            </div>
+        </div>
+
+
+        <!-- Earth -->
+        <div class="orbit earth-orbit">
+            <div class="planet earth"
+                data-name="🌍 Earth"
+                data-info="Earth is the third planet from the Sun and our home planet. It has liquid water on its surface and an atmosphere that supports life. Earth has one natural satellite, the Moon. It takes about 365 days to complete one orbit around the Sun.">
+            </div>
+        </div>
+
+
+        <!-- Mars -->
+        <div class="orbit mars-orbit">
+            <div class="planet mars"
+                data-name="🔴 Mars"
+                data-info="Mars is the fourth planet from the Sun and is known as the Red Planet because of the iron-rich material on its surface. It is a cold, rocky world with mountains, valleys, and polar ice caps. Mars has two small moons, Phobos and Deimos, and takes about 687 Earth days to orbit the Sun.">
+            </div>
+        </div>
+
+
+        <!-- Jupiter -->
+        <div class="orbit jupiter-orbit">
+            <div class="planet jupiter"
+                data-name="🟤 Jupiter"
+                data-info="Jupiter is the fifth planet from the Sun and the largest planet in the Solar System. It is a gas giant made mostly of hydrogen and helium. Jupiter is famous for its Great Red Spot, a huge storm in its atmosphere. It has many moons and takes about 12 Earth years to orbit the Sun.">
+            </div>
+        </div>
+
+
+        <!-- Saturn -->
+        <div class="orbit saturn-orbit">
+            <div class="planet saturn"
+                data-name="🪐 Saturn"
+                data-info="Saturn is the sixth planet from the Sun and the second-largest planet. It is a gas giant famous for its beautiful system of rings made mostly of ice and rocky particles. Saturn has many moons and takes about 29.5 Earth years to complete one orbit around the Sun.">
+            </div>
+        </div>
+
+
+        <!-- Uranus -->
+        <div class="orbit uranus-orbit">
+            <div class="planet uranus"
+                data-name="🔵 Uranus"
+                data-info="Uranus is the seventh planet from the Sun and is classified as an ice giant. It has a blue-green appearance because of methane in its atmosphere. Uranus has a very large axial tilt, making it appear to rotate almost on its side. It takes about 84 Earth years to orbit the Sun.">
+            </div>
+        </div>
+
+
+        <!-- Neptune -->
+        <div class="orbit neptune-orbit">
+            <div class="planet neptune"
+                data-name="🔵 Neptune"
+                data-info="Neptune is the eighth and farthest planet from the Sun. It is an ice giant with a deep blue appearance and extremely strong winds. Neptune has a faint ring system and several moons, including Triton. It takes about 165 Earth years to complete one orbit around the Sun.">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Planet Info Card -->
+    <div class="info-card" id="infoCard">
+        <h2 id="planetName">Planet Name</h2>
+        <p id="planetInfo">Planet information will appear here.</p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
